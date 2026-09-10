@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /*https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Villamiseria5.JPG/960px-Villamiseria5.JPG?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail*/
-    background-image: url("https://gettyimages.es/fotos/villas-miseria"); 
+    background-image: url("https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Villamiseria5.JPG/960px-Villamiseria5.JPG?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
