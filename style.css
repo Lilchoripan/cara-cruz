@@ -1,6 +1,11 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1e1e2e;
+    /* PEGA AQUÍ EL LINK DE TU IMAGEN DE FONDO */
+    background-image: url("https://gettyimages.es/fotos/villas-miseria"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -12,21 +17,26 @@ body {
 
 h1 {
     margin-bottom: 20px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
+/* Contenedor de la moneda 3D */
 .coin-container {
     perspective: 1000px;
     margin: 30px;
 }
 
 .coin {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 3s ease-out;
 }
 
+/* Lados de la moneda */
 .side {
     width: 100%;
     height: 100%;
@@ -38,8 +48,16 @@ h1 {
     justify-content: center;
     font-size: 22px;
     font-weight: bold;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    border: 4px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border: 4px solid #ffd700;
+    overflow: hidden;
+}
+
+.side img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .heads {
@@ -53,29 +71,36 @@ h1 {
     transform: rotateY(180deg);
 }
 
+/* Botón estilizado */
 button {
-    padding: 12px 28px;
+    padding: 14px 32px;
     font-size: 18px;
     font-weight: bold;
-    color: #1e1e2e;
-    background-color: #00adb5;
+    color: #0f0c20;
+    background-color: #00fff5;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     cursor: pointer;
-    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
 }
 
 button:hover {
-    background-color: #00fff5;
+    background-color: #00adb5;
+    color: #ffffff;
+    box-shadow: 0 0 25px rgba(0, 255, 245, 0.7);
+    transform: translateY(-2px);
 }
 
 button:active {
     transform: scale(0.95);
 }
 
+/* Mensaje de resultado */
 #result {
     margin-top: 25px;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
-    min-height: 30px;
+    min-height: 35px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.9);
 }
